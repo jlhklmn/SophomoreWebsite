@@ -146,10 +146,10 @@ html {
 #breaker-line-one {
     background-color: #323232;
     width: 1px;
-    height: 140px;
+    height: 110px;
     margin-top: 39px;
     margin-left: 50%;
-    margin-bottom: 320px;
+    margin-bottom: 152px;
 }
 
 #page-icon-display {
@@ -199,7 +199,7 @@ html {
 }
 
 #section-start {
-    margin-top: -42px;
+    margin-top: 200px;
     transition-duration: 0.2s;
 }
 
@@ -313,7 +313,7 @@ html {
     }
 
     #section-start {
-        margin-top: 12px;
+        margin-top: 210px;
     }
 
     #studio-img {
