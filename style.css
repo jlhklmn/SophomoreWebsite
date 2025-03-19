@@ -1,6 +1,6 @@
-@font-face { font-family: "BuilderSans"; src: url("assets/BuilderSans.woff2");}
-@font-face {font-family: "BuilderSans"; font-weight: bold; src: url("assets/BuilderSans-SemiBold.woff2");}
-@font-face {font-family: "BuilderSans"; font-weight: bolder; src: url("assets/BuilderSans-Bold.woff2"); }
+@font-face { font-family: "BuilderSans"; src: url("BuilderSans.woff2");}
+@font-face {font-family: "BuilderSans"; font-weight: bold; src: url("BuilderSans-SemiBold.woff2");}
+@font-face {font-family: "BuilderSans"; font-weight: bolder; src: url("BuilderSans-Bold.woff2"); }
 
 * {
     position: relative;
