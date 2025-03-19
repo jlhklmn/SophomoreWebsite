@@ -356,9 +356,13 @@ body {
 
 @media (pointer: none) or (pointer: coarse) {
     #topbar {
-        height: 7.4%;
+        height: 90px;
     }
 
+    #backdrop {
+        margin-top: 90px;
+    }
+    
     #studio-img {
         max-width: none;
     }
