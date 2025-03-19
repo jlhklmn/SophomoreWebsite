@@ -18,6 +18,15 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+#web-container {
+    width: 100%;
+    height: auto;
+}
+
 #topbar {
     width: 100%;
     height: 60px;
@@ -307,7 +316,7 @@ html {
     text-shadow: 2px 2px 8px black;
 }
 
-@media (max-width: 720px), (pointer: none), (pointer: coarse) {
+@media (max-width: 720px) or (pointer: none) or (pointer: coarse) {
     #title {
         font-size: 41px;
     }
@@ -338,9 +347,13 @@ html {
         max-width: 90%;
         margin-left: 5%;
     }
+
+    #web-container {
+        height: calc(100% * 5);
+    }
 }
 
-@media (max-width: 940px), (pointer: none), (pointer: coarse) {
+@media (max-width: 940px) or (pointer: none) or (pointer: coarse) {
     #topbar h6 {
         display: none;
     }
