@@ -277,8 +277,10 @@ body {
 }
 
 #studio-img {
-    width: 640px;
+    width: 90%;
     height: auto;
+
+    max-width: 640px;
     
     margin: 0px;
     margin-left: 50%;
