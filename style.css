@@ -172,6 +172,17 @@ body {
     transform: translateX(-50%);
 }
 
+#device-warning {
+    font-size: 19px;
+    font-weight: 400;
+    width: 100%;
+    color: #bbbcbe;
+    margin-top: -24px;
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+
 #explore {
     font-size: 24px;
     font-weight: 600;
@@ -365,5 +376,9 @@ body {
     
     #studio-img {
         max-width: none;
+    }
+
+    #device-warning {
+        display: block;
     }
 }
