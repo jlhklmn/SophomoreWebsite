@@ -347,10 +347,6 @@ body {
         max-width: 90%;
         margin-left: 5%;
     }
-
-    #web-container {
-        height: calc(100% * 5);
-    }
 }
 
 @media (max-width: 940px) or (pointer: none) or (pointer: coarse) {
