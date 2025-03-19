@@ -107,7 +107,7 @@ body {
 }
 
 #topbar h2 {
-    font-size: 22px;
+    font-size: 137%;
     width: auto;
     top: 2px;
     display: inline;
@@ -359,9 +359,5 @@ body {
 @media (pointer: none) or (pointer: coarse) {
     #topbar {
         height: 7.4%;
-    }
-
-    #topbar h2 {
-        font-size: 37%;
     }
 }
