@@ -25,6 +25,7 @@ body {
 #web-container {
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 #topbar {
@@ -352,5 +353,15 @@ body {
 @media (max-width: 940px) or (pointer: none) or (pointer: coarse) {
     #topbar h6 {
         display: none;
+    }
+}
+
+@media (pointer: none) or (pointer: coarse) {
+    #topbar {
+        height: 7.4%;
+    }
+
+    #topbar h2 {
+        font-size: 37%;
     }
 }
