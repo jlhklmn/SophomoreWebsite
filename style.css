@@ -328,10 +328,6 @@ body {
         margin-top: 210px;
     }
 
-    #studio-img {
-        width: 420px;
-    }
-
     #gradient2 {
         margin-top: 190px;
     }
@@ -361,5 +357,9 @@ body {
 @media (pointer: none) or (pointer: coarse) {
     #topbar {
         height: 7.4%;
+    }
+
+    #studio-img {
+        max-width: none;
     }
 }
