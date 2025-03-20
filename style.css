@@ -124,6 +124,7 @@ body {
 }
 
 #main-button {
+    transition-duration: 0.1s;
     max-width: 310px;
     width: 100%;
     height: auto;
@@ -143,6 +144,10 @@ body {
     margin-top: 42px;
     
     box-shadow: 2px 2px 6px black;
+}
+
+#main-button:hover {
+    background-color: #ffffff;
 }
 
 #breaker-line-one {
@@ -198,10 +203,11 @@ body {
 
 .topic-section h1 {
     transition-duration: 0.2s;
+    width: auto;
     font-size: 20px;
     color: #528bff;
     margin: 2px;
-    text-shadow: 0px 2px 24px black;
+    text-shadow: 0px 2px 8px black;
 }
 
 .topic-section h2 {
@@ -209,6 +215,7 @@ body {
     font-weight: 300;
     margin: 5px;
     margin-left: 2px;
+    text-shadow: 0px 2px 8px black;
 }
 
 #section-start {
@@ -257,7 +264,7 @@ body {
 }
 
 .topic-scrollbar div img {
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -265,7 +272,7 @@ body {
 }
 
 .topic-scrollbar div img:hover {
-    opacity: 90%;
+    opacity: 85%;
 }
 
 .gradient {
@@ -288,6 +295,20 @@ body {
     margin-left: 50%;
     margin-top: 56px;
     transform: translateX(-50%);
+}
+
+#earth-img {
+    width: 65%;
+    height: auto;
+    
+    min-width: 720px;
+
+    margin: 0px;
+    margin-left: 50%;
+    margin-top: 450px;
+    transform: translateX(-50%);
+
+    position: absolute;
 }
 
 #gradient2 {
