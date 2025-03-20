@@ -14,12 +14,7 @@
 }
 
 html {
-    overflow-x: hidden;
     scroll-behavior: smooth;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 #web-container {
@@ -27,7 +22,7 @@ body {
     height: auto;
     overflow: hidden;
 }
-
+ 
 #topbar {
     width: 100%;
     height: 60px;
@@ -40,7 +35,7 @@ body {
     top: 0px;
     position: sticky;
 
-    z-index: 10;
+    z-index: 2;
 }
 
 #link-ref {
@@ -57,7 +52,6 @@ body {
     overflow: hidden;
     position: absolute;
     margin: 0px;
-    margin-top: 60px;
     margin-left: 50%;
     transform: translateX(-50%);
 }
@@ -383,10 +377,6 @@ body {
 @media (pointer: none) or (pointer: coarse) {
     #topbar {
         height: 90px;
-    }
-
-    #backdrop {
-        margin-top: 90px;
     }
     
     #studio-img {
