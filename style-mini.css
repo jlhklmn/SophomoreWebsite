@@ -38,6 +38,31 @@ html {
     z-index: 2;
 }
 
+#topbar img {
+    width: auto;
+    height: 60%;
+
+    display: inline;
+    top: 20%;
+    margin-left: 32px;
+}
+
+#topbar h2 {
+    font-size: 2.7vh;
+    width: auto;
+    top: 2px;
+    display: inline;
+    margin-left: 15px;
+}
+
+#topbar h6 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #bbbcbe;
+    display: inline;
+    margin-left: 24px;
+}
+
 @media (max-width: 940px) or (pointer: none) or (pointer: coarse) {
     #topbar h6 {
         display: none;
