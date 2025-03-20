@@ -311,6 +311,10 @@ html {
     margin-top: 310px;
 }
 
+#anchor {
+    top: -200px;
+}
+
 #about-title {
     transition-duration: 0.2s;
     font-size: 24px;
@@ -376,6 +380,10 @@ html {
 @media (pointer: none) or (pointer: coarse) {
     #topbar {
         height: 90px;
+    }
+
+    #anchor {
+        top: -290px;
     }
     
     #studio-img {
