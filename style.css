@@ -67,9 +67,12 @@ body {
     width: 100%;
     height: auto;
 
+    min-width: 960px;
+
     margin: 0px;
     padding: 0px;
 
+    overflow: hidden;
     position: absolute;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -322,7 +325,7 @@ body {
 
     margin: 0px;
     margin-left: 4%;
-    margin-top: 90px;
+    margin-top: 120px;
     text-shadow: 2px 2px 8px black;
 }
 
