@@ -188,3 +188,9 @@ html {
         display: none;
     }
 }
+
+@media  (pointer: none) or (pointer: coarse) {
+    #topbar {
+        height: 90px;
+    }
+}
