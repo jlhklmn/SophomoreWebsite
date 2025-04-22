@@ -381,18 +381,6 @@ html {
 }
 
 @media (pointer: none) or (pointer: coarse) {
-    #topbar {
-        height: 90px;
-    }
-
-    #anchor {
-        top: -290px;
-    }
-    
-    #studio-img {
-        max-width: none;
-    }
-
     #device-warning {
         display: block;
     }
