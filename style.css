@@ -223,6 +223,7 @@ html {
 
 .topic-scrollbar {
     overflow: auto;
+    overflow-y: hidden;
     margin: 2px;
     top: 11px;
     height: 170px;
@@ -230,7 +231,6 @@ html {
     white-space: nowrap;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    mask-image: linear-gradient(to right, #111216, #111216 calc(100% - 3px), transparent);
 }
 
 .topic-scrollbar::-webkit-scrollbar {
@@ -263,9 +263,8 @@ html {
 
 .topic-scrollbar div img {
     transition-duration: 0.2s;
-    height: 100%;
     width: 100%;
-    overflow: hidden;
+    height: 100%;
     border-radius: 8px;
     opacity: 85%;
 }
@@ -343,6 +342,60 @@ html {
     width: 92%;
     max-width: 720px;
     text-shadow: 2px 2px 8px black;
+}
+
+#left {
+    position: absolute;
+    z-index: 99;
+    background-color: #111216;
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+
+    left: 0px;
+    margin-top: 85px;
+    margin-left: 16px;
+}
+
+#left h6 {
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-left: 11px;
+    margin-top: 4px;
+    font-weight: 800;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#right {
+    position: absolute;
+    z-index: 99;
+    background-color: #111216;
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+
+    right: 0px;
+    margin-top: -85px;
+    margin-right: 16px;
+}
+
+#right h6 {
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-left: 11px;
+    margin-top: 4px;
+    font-weight: 800;
+    font-size: 20px;
+    color: #ffffff;
 }
 
 @media (max-width: 720px) or (pointer: none) or (pointer: coarse) {
