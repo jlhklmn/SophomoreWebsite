@@ -19,3 +19,11 @@ function loaded() {
         }
     }, 11)
 }
+
+function scrollUi(topic, left) {
+    if (left == true) {
+        document.getElementById(topic).scrollLeft -= 282
+    } else {
+        document.getElementById(topic).scrollLeft += 282
+    }
+}
