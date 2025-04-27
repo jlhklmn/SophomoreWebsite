@@ -22,8 +22,10 @@ function loaded() {
 
 function scrollUi(topic, left) {
     if (left == true) {
-        document.getElementById(topic).scrollLeft -= 281
+        let x = document.getElementById(topic).scrollLeft - 281
+        document.getElementById(topic).scrollTo({top: 0, left: x, behavior: "smooth"})
     } else {
-        document.getElementById(topic).scrollLeft += 281
+        let x = document.getElementById(topic).scrollLeft + 281
+        document.getElementById(topic).scrollTo({top: 0, left: x, behavior: "smooth"})
     }
 }
