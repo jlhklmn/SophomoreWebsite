@@ -4,6 +4,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="anchor.js"></script>
         <link rel="icon" type="icon/img" href="icon.ico">
         
         <title>Roblox Studio for Dummies</title>
@@ -51,7 +52,9 @@
                 <a href="getting-started.html"><h1>Getting Started</h1></a>
                 <h2>Explore the basics features and usage of Roblox Studio!</h2>
 
-                <div class="topic-scrollbar">
+                <a id="left" onclick="scrollUi('getting-started', true)"><h6><</h6></a>
+
+                <div class="topic-scrollbar" id="getting-started">
                     <div>
                         <a href="getting-started.html#anchor1"><img src="workspace-thumbnail.png"></a>
                         <h2>Explorer & Properties Tab,<br>Tools & Workspace</h2>
@@ -85,13 +88,17 @@
                         <h2>Plugins</h2>
                     </div>
                 </div>
+
+                <a id="right" onclick="scrollUi('understanding-roles', false)"><h6>></h6></a>
             </div>
 
             <div class="topic-section">
                 <a href="understanding-roles.html"><h1>Understanding Roles</h1></a>
                 <h2>Learn what roles are responsible for what parts of the game!</h2>
 
-                <div class="topic-scrollbar">
+                <a id="left" onclick="scrollUi('understanding-roles', true)"><h6><</h6></a>
+
+                <div class="topic-scrollbar" id="understanding-roles">
                     <div>
                         <a href="understanding-roles.html#anchor1"><img src="builder.png"></a>
                         <h2>Builder</h2>
@@ -129,13 +136,17 @@
                         <h2>Music Composer</h2>
                     </div>
                 </div>
+
+                <a id="right" onclick="scrollUi('getting-started', false)"><h6>></h6></a>
             </div>
 
             <div class="topic-section">
                 <a href="script.html"><h1>LUAU Scripting Guide</h1></a>
                 <h2>Tutorials on basic (and some advanced) scripting with provided examples.</h2>
 
-                <div class="topic-scrollbar">
+                <a id="left" onclick="scrollUi('script-guide', true)"><h6><</h6></a>
+
+                <div class="topic-scrollbar" id="script-guide">
                     <div>
                         <a href="script.html#1"><img src="script.png"></a>
                         <h2>Variables & Paths</h2>
@@ -201,6 +212,8 @@
                         <h2>Module Scripts (Advanced)</h2>
                     </div>
                 </div>
+                
+                <a id="right" onclick="scrollUi('script-guide', false)"><h6>></h6></a>
             </div>
 
             <!-- ======================= Cool Text Groups ======================= -->
