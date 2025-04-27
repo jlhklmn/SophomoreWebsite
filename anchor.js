@@ -22,8 +22,8 @@ function loaded() {
 
 function scrollUi(topic, left) {
     if (left == true) {
-        document.getElementById(topic).scrollLeft -= 282
+        document.getElementById(topic).scrollLeft -= 281
     } else {
-        document.getElementById(topic).scrollLeft += 282
+        document.getElementById(topic).scrollLeft += 281
     }
 }
