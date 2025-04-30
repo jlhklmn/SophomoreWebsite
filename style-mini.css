@@ -102,7 +102,7 @@ html {
     margin-left: 24px;
 }
 
-#web-container div:not(#breaker) {
+#web-container div:not(#breaker, #code-sample) {
     margin: 2%;
     margin-top: 14px;
     margin-bottom: 38px;
@@ -132,7 +132,7 @@ html {
     font-weight: 600;
 }
 
-#web-container div h3 {
+#web-container div h3:not(#code-string) {
     margin: 0px;
     margin-top: 22px;
 
@@ -173,10 +173,104 @@ html {
 #breaker {
     margin-left: 2%;
     margin-bottom: 2px;
-    
+
     width: 90%;
     height: 1px;
     background-color: #313339;
+}
+
+#red {
+    padding: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 5px;
+
+    color: #ea4654;
+    background-color: #321a1b;
+}
+
+#green {
+    padding: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 5px;
+
+    color: #96f9a0;
+    background-color: #182519;
+}
+
+#blue {
+    padding: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 5px;
+
+    color: #79e0ff;
+    background-color: #11191c;
+}
+
+#gold {
+    padding: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+
+    color: #f8c65a;
+    background-color: #1e1a11;
+}
+
+#yellow {
+    padding: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+
+    color: #fff894;
+    background-color: #242314;
+}
+
+#code-sample {
+    background-color: #191a1f;
+    height: auto;
+    min-height: 16px;
+    padding: 6px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #35403e;
+}
+
+#code-string {
+    width: 100%;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #bbbcbe;
 }
 
 @media (max-width: 940px) or (pointer: none) or (pointer: coarse) {
