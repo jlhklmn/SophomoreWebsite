@@ -51,6 +51,31 @@
                 <a id="anchor1"></a>
                <h1>Variables & Paths</h1>
 
+               <h2>Variables</h2>
+               <h3>To define a variable, you can use the word local keyword. </h3>
+               <h3 style="margin-top: 0px;">Creating variables allows you to organize your code better, as well as shorten code that may take up a lot of lines, such as functions. </h3>
+               
+               <div id="code-sample">
+                <h3 id="code-string"><b id="red">local</b> variableName1 = <b id="green">"This is a string value."</b></h3>
+                <br>
+                <h3 id="code-string"><b id="red">local</b> variableName2 = <b id="red">function</b>()</h3>
+                <h3 id="code-string"></h3><b id="indent"></b><b id="blue">print</b>(<b id="green">Functions can be stored in variables too!</b>)</h3>
+                <h3 id="code-string"><b id="red">end</b></h3>
+               </div>
+               
+               <h3>Variables does have rules of it's own. It cannot have a name that starts with a number, and it cannot be a <a id="href" target="_blank" href="https://create.roblox.com/docs/luau/variables#reserved-names">reserved word</a>. Variables are cammel cased, so <b id="variable">Example</b> and <b id="variable">EXAMple</b> are different variables.</h3>
+
+               <h2 style="margin-top: 52px;">Paths</h2>
+               <h3>Paths are used define objects under different parents, which can be found in the <a id="href" target="_blank" href="https://create.roblox.com/docs/studio/explorer">Explorer tab</a>. Here is a quick example of how you would write the path to the Texture under Folder1.</h3>
+               <img src="path-example.png" style="width: 86%; border-radius: 6px; box-shadow: 2px 2px 6px black; max-width: 230px; margin-top: 24px;">
+
+               <div id="code-sample">
+                <h3 id="code-string"><b id="red">local</b> texture = <b id="blue">game</b>.<b id="dark-blue">Workspace</b>.<b id="dark-blue">ExampleFolder</b>.<b id="dark-blue">Folder1</b>.<b id="dark-blue">Texture</b></h3>
+                <h3 id="code-string"><b id="comment">-- Note that the folder 'ExampleFolder' is a folder object inside Workspace</b></h3>
+            </div>
+
+               <h3>We can see how we use the fullstop character to get children objects within another object. Here we can see that we started with the word 'game'. This keyword represents the whole game itself, and it is not visible in the explorer tab because everything inside the explorer is what's inside the keyword game. We can then see that we are navigating into 'Workspace', which you can find as the first object inside explorer. You can see how we used a dot (the fullstop) to connect these two keywords, which is basically grabbing the 'Workspace' object from game.</h3>
+               <h3>Using this logic, we can find other objects inside a previously defined object within one another, and we are able to navigate into the folder and find the texture object.</h3>
             </div>
 
             <div id="breaker"></div>
@@ -59,6 +84,7 @@
                 <a id="anchor2"></a>
                <h1>Modifying Properties</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -67,6 +93,7 @@
                 <a id="anchor3"></a>
                <h1>Math Operators</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -75,6 +102,7 @@
                 <a id="anchor4"></a>
                <h1>Logical Statements</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -83,6 +111,7 @@
                 <a id="anchor5"></a>
                <h1>While & For Loops</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -91,6 +120,7 @@
                 <a id="anchor6"></a>
                <h1>Functions</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -99,6 +129,7 @@
                 <a id="anchor7"></a>
                <h1>Services</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -107,6 +138,7 @@
                 <a id="anchor8"></a>
                <h1>Tween Service</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -115,6 +147,7 @@
                 <a id="anchor9"></a>
                <h1>Events (Part 1)</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -123,6 +156,7 @@
                 <a id="anchor10"></a>
                <h1>Creating Instances</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -131,6 +165,7 @@
                 <a id="anchor11"></a>
                <h1>Characters & Humanoids</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -139,6 +174,7 @@
                 <a id="anchor12"></a>
                <h1>Player Animations</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -147,6 +183,7 @@
                 <a id="anchor13"></a>
                <h1>Particle Emitters</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -155,6 +192,7 @@
                 <a id="anchor14"></a>
                <h1>UI Interactions & Events (Part 2)</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -163,6 +201,7 @@
                 <a id="anchor15"></a>
                <h1>Protected Calls (pcall) (Advanced)</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div id="breaker"></div>
@@ -171,6 +210,7 @@
                 <a id="anchor16"></a>
                <h1>Module Scripts (Advanced)</h1>
 
+               <h3>To be finished...</h3>
             </div>
 
             <div style="padding-top: 38px;"></div>
