@@ -190,7 +190,7 @@ html {
     border-radius: 5px;
 
     color: #ea4654;
-    background-color: #321a1b;
+    background-color: #291819;
 }
 
 #green {
@@ -242,10 +242,10 @@ html {
 
     letter-spacing: 1px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     border-radius: 5px;
 
-    color: #fff894;
+    color: #fffab9;
     background-color: #242314;
 }
 
@@ -264,13 +264,18 @@ html {
     border-color: #35403e;
 }
 
+#indent {
+    margin: 0px;
+    margin-left: 24px;
+}
+
 #code-string {
     width: 100%;
     margin: 0px;
     font-size: 16px;
     font-weight: 300;
     line-height: 26px;
-    color: #bbbcbe;
+    color: #eeeeee;
 }
 
 @media (max-width: 940px) or (pointer: none) or (pointer: coarse) {
