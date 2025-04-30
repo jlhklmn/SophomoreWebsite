@@ -157,6 +157,18 @@ html {
     color: #79a0ee;
 }
 
+#variable {
+    padding: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #23262d;
+    border-radius: 5px;
+    color: #eeeeee;
+}
+
 #web-container div img {
     margin-top: 46px;
     
