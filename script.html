@@ -69,7 +69,7 @@
 
                <h2>Variables</h2>
                <h3>To define a variable, you can use the word <b id="variable">local</b> keyword. </h3>
-               <h3 style="margin-top: 0px;">Creating variables allows you to organize your code better, as well as shorten code that may take up a lot of lines, such as functions. </h3>
+               <h3 style="margin-top: 0px;">Creating variables allows you to organize your code better, as well as shorten code that may take up a lot of lines, such as <a onclick="anchor(6)" id="href">functions</a>. </h3>
                
                <div id="code-sample">
                 <h3 id="code-string"><b id="red">local</b> variableName1 = <b id="green">"This is a string value."</b></h3>
@@ -78,8 +78,26 @@
                 <h3 id="code-string"></h3><b id="indent"></b><b id="blue">print</b>(<b id="green">"Functions can be stored in variables too!"</b>)</h3>
                 <h3 id="code-string"><b id="red">end</b></h3>
                </div>
-               
+            
                <h3>Variables does have rules of it's own. It cannot have a name that starts with a number, and it cannot be a <a id="href" target="_blank" href="https://create.roblox.com/docs/luau/variables#reserved-names">reserved word</a>. Variables are case-sensitive, so <b id="variable">Example</b> and <b id="variable">EXAMple</b> are different variables.</h3>
+               <h3>If you are writing your code, make sure you are defining the variables before you use them, otherwise the code will not recognize the variable. This is what seperates <b id="variable">Scripting</b>, where code runs line by line, and <b id="variable">Programming</b>, where all the lines of code runs at once. In our case, we're doing <b id="variable">Scripting</b>.</h3>
+            
+               <h2 style="margin-top: 52px;">Updating Variables</h2>
+               <h3>To update a variable, you simply re-define it. Instead of using <b id="variable">local</b> mandatorily, you have the option to choose to use it or not. Let's say you are re-defining a variable inside a <a onclick="anchor(5)" id="href">loop</a> or a <a onclick="anchor(6)" id="href">function</a>. Here's an example of what I mean.</h3>
+
+               <div id="code-sample">
+                <h3 id="code-string"><b id="red">local</b> variable = <b id="gold">1</b></h3>
+                <br>
+                <h3 id="code-string"><b id="red">local</b> exampleFunction = <b id="red">function</b>()</h3>
+                <h3 id="code-string"><b id="indent"></b><b id="red">local</b> variable = <b id="gold">2</b></h3>
+                <h3 id="code-string"><b id="indent"></b><b id="blue">print</b>(variable)</h3>
+                <h3 id="code-string"><b id="red">end</b></h3>
+                <br>
+                <h3 id="code-string"><b id="yellow">exampleFunction</b>() <b id="comment">-- This will update the variable locally then print out 2</b></h3>
+                <h3 id="code-string"><b id="blue">print</b>(variable) <b id="comment">-- This will print out 1 even though the function was ran first</b></h3>
+               </div>
+
+               <h3>When re-defining using <b id="variable">local</b>, the variable inside the loop technically is a different variable than the one outside but with the same name, hence why if you print the variable again after running the function the value did not update. To update the variable's value everywhere in the script, you can re-define it without using <b id="variable">local</b>.</h3>
 
                <h2 style="margin-top: 52px;">Paths</h2>
                <h3>Paths are used defining objects under different parent objects, which can be found in the <a id="href" target="_blank" href="https://create.roblox.com/docs/studio/explorer">Explorer tab</a>. Here is a quick example of how you would write the path to the Texture under Folder1.</h3>
@@ -90,8 +108,9 @@
                 <h3 id="code-string"><b id="comment">-- Note that the folder 'ExampleFolder' is a folder object inside Workspace</b></h3>
                </div>
 
-               <h2 style="margin-top: 52px;">Updating Variables</h2>
-               <h3>To update a variable, you will use the equal sign like how you would for defining a variable. When re-defining the variable, you will not put <b id="variable">local</b> before the sentence (you technically can... but it's more advanced to understand so I won't explain too much in detail).</h3>
+               <h3>To start with, we have the keyword <b id="variable">game</b>, which represents the game itself. To think of it in a way, the Explorer tab is a list of objects. Everything that is within the explorer, not counting objects that are under another, is inside the <b id="variable">game</b> keyword.</h3>
+               <h3>In scripting, we use key terms to identify objects, such as <b id="variable">Parent</b> and <b id="variable">Child</b>. As seen in the image above, We have <b id="variable">Folder1</b> and <b id="variable">Folder2</b>, which are both under <b id="variable">ExampleFolder</b>. We will call the <b id="variable">ExampleFolder</b> the Parent folder, and the other two the Child folder. Child objects are basically the objects inside the said Parent object.</h3>
+               <h3>To get child objects from another object, we first need to have a variable that is defining the parenting object. Here we don't have <b id="variable">ExampleFolder</b> defined, so we will do it first. As seen mentioned in the comment text inside the script, <b id="variable">ExampleFolder</b> is under <b id="variable">Workspace</b>, which is under <b id="variable">game</b>. We can use the dot (fullstop) character to get child objects inside another object, so we can use <b id="variable">game.Workspace</b> to get Workspace, and <b id="variable">game.Workspace.ExampleFolder</b> to get <b id="variable">ExampleFolder</b>. Then we just repeat the steps until we get to Texture!</h3>
             </div>
 
             <div id="breaker"></div>
@@ -109,10 +128,12 @@
                 <h3 id="code-string"><b id="comment">-- This will return a color3 value, as you can see in the image above that property defines the color of the part.</b></h3>
                </div>
 
-               <h3>Changing the variable's value will just be updating the variable, the property that it defines will not update because it is not attached onto the variable. In order to update the property, you can use equal signs, like how you update a variable, to update the property.</h3>
+               <h3>Changing the variable's value will just be updating the variable, the property that it defines will not update because it is not attached onto the variable. In order to update the property, you can use equal signs just like how you would update a variable, to update the property.</h3>
 
                <div id="code-sample">
                 <h3 id="code-string"><b id="blue">game</b>.<b id="dark-blue">Workspace</b>.<b id="dark-blue">Part</b>.<b id="dark-blue">Color</b> = <b id="blue">Color3</b>.<b id="blue">new</b>(<b id="gold">1</b>, <b id="gold">0</b>, <b id="gold">0</b>)</h3>
+                <h3 id="code-string"><b id="blue">print</b>(<b id="blue">game</b>.<b id="dark-blue">Workspace</b>.<b id="dark-blue">Part</b>.<b id="dark-blue">Color</b>) <b id="comment">-- This will print (1, 0, 0), the color you have updated it to</b></h3>
+                <br>
                 <h3 id="code-string"><b id="comment">-- This is how you can update a property of an object!</b></h3>
                </div>
             </div>
