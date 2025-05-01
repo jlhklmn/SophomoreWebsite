@@ -27,20 +27,20 @@
             <h2 style="padding-bottom: 0px; margin-bottom: 28px; margin-top: 32px;">LUAU Scripting Guide</h2>
             <a onclick="anchor(1)"><h2>Variables & Paths</h2></a>
             <a onclick="anchor(2)"><h2>Modifying Properties</h2></a>
-            <a onclick="anchor(3)"><h2>Math Operators</h2></a>
-            <a onclick="anchor(4)"><h2>Logical Statements</h2></a>
-            <a onclick="anchor(5)"><h2>While & For Loops</h2></a>
-            <a onclick="anchor(6)"><h2>Functions</h2></a>
-            <a onclick="anchor(7)"><h2>Services</h2></a>
-            <a onclick="anchor(8)"><h2>Tween Service</h2></a>
-            <a onclick="anchor(9)"><h2>Events (Part 1)</h2></a>
-            <a onclick="anchor(10)"><h2>Creating Instances</h2></a>
-            <a onclick="anchor(11)"><h2>Characters & Humanoids</h2></a>
-            <a onclick="anchor(12)"><h2>Player Animations</h2></a>
-            <a onclick="anchor(13)"><h2>Particle Emitters</h2></a>
-            <a onclick="anchor(14)"><h2>UI Interactions & Events (Part 2)</h2></a>
-            <a onclick="anchor(15)"><h2>Protected Calls (pcall) (Advanced)</h2></a>
-            <a onclick="anchor(16)"><h2>Module Scripts (Advanced)</h2></a>
+            <a onclick="anchor(3)"><h2 style="color: #f3f3f3;">Math Operators</h2></a>
+            <a onclick="anchor(4)"><h2 style="color: #f3f3f3;">Logical Statements</h2></a>
+            <a onclick="anchor(5)"><h2 style="color: #f3f3f3;">While & For Loops</h2></a>
+            <a onclick="anchor(6)"><h2 style="color: #f3f3f3;">Functions</h2></a>
+            <a onclick="anchor(7)"><h2 style="color: #f3f3f3;">Services</h2></a>
+            <a onclick="anchor(8)"><h2 style="color: #f3f3f3;">Tween Service</h2></a>
+            <a onclick="anchor(9)"><h2 style="color: #f3f3f3;">Events (Part 1)</h2></a>
+            <a onclick="anchor(10)"><h2 style="color: #f3f3f3;">Creating Instances</h2></a>
+            <a onclick="anchor(11)"><h2 style="color: #f3f3f3;">Characters & Humanoids</h2></a>
+            <a onclick="anchor(12)"><h2 style="color: #f3f3f3;">Player Animations</h2></a>
+            <a onclick="anchor(13)"><h2 style="color: #f3f3f3;">Particle Emitters</h2></a>
+            <a onclick="anchor(14)"><h2 style="color: #f3f3f3;">UI Interactions & Events (Part 2)</h2></a>
+            <a onclick="anchor(15)"><h2 style="color: #f3f3f3;">Protected Calls (pcall) (Advanced)</h2></a>
+            <a onclick="anchor(16)"><h2 style="color: #f3f3f3;">Module Scripts (Advanced)</h2></a>
             <a href="index.html"><h2 style="margin-top: 28px;">Back to Home Page</h2></a>
         </div>
 
@@ -48,34 +48,50 @@
             <!-- ======================= Info ======================= -->
 
             <div>
+                <h1 style="margin-bottom: 24px;">Introduction</h1>
+                
+                <h3>Here are some quick tips and tricks when during scripting to increase your productivity and efficiency. They're quite useful!</h3>
+                
+                <h3><b style="font-weight: 400;">Commenting</b>:<br> If you add two dashes (<b id="variable">--</b>) before a line of code/text, whatever is behind those dashes turns into a comment. Comments will not run, even if they are functionable code. They are useful to debug your code with (by toggling your code on and off), as well as writing notes down to remember which line does what.</h3>
+                <h3 style="margin-top: 16px;"><b style="font-weight: 400;">CTRL + Forward Slash ( / )</b>:<br> Toggles comment on all selected lines; Useful to quickly disable and enable code to debug whenever you have to.</h3>
+                <h3 style="margin-top: 16px;"><b style="font-weight: 400;">CTRL + Square Brackets ( [ <b style="font-weight: 300; color: #747576;">or</b> ] )</b>:<br> Indents all selected lines towards the left or right; An indent is the gap in front of a line of code, which can also be inserted by pressing the <b id="variable">TAB</b> key while at the start of the line.</h3>
+            
+                <div id="code-sample">
+                    <h3 id="code-string"><b id="comment">-- This is an example of how a comment would look like!</b></h3>
+                </div>
+            </div>
+
+            <div id="breaker"></div>
+
+            <div>
                 <a id="anchor1"></a>
                <h1>Variables & Paths</h1>
 
                <h2>Variables</h2>
-               <h3>To define a variable, you can use the word local keyword. </h3>
+               <h3>To define a variable, you can use the word <b id="variable">local</b> keyword. </h3>
                <h3 style="margin-top: 0px;">Creating variables allows you to organize your code better, as well as shorten code that may take up a lot of lines, such as functions. </h3>
                
                <div id="code-sample">
                 <h3 id="code-string"><b id="red">local</b> variableName1 = <b id="green">"This is a string value."</b></h3>
                 <br>
                 <h3 id="code-string"><b id="red">local</b> variableName2 = <b id="red">function</b>()</h3>
-                <h3 id="code-string"></h3><b id="indent"></b><b id="blue">print</b>(<b id="green">Functions can be stored in variables too!</b>)</h3>
+                <h3 id="code-string"></h3><b id="indent"></b><b id="blue">print</b>(<b id="green">"Functions can be stored in variables too!"</b>)</h3>
                 <h3 id="code-string"><b id="red">end</b></h3>
                </div>
                
-               <h3>Variables does have rules of it's own. It cannot have a name that starts with a number, and it cannot be a <a id="href" target="_blank" href="https://create.roblox.com/docs/luau/variables#reserved-names">reserved word</a>. Variables are cammel cased, so <b id="variable">Example</b> and <b id="variable">EXAMple</b> are different variables.</h3>
+               <h3>Variables does have rules of it's own. It cannot have a name that starts with a number, and it cannot be a <a id="href" target="_blank" href="https://create.roblox.com/docs/luau/variables#reserved-names">reserved word</a>. Variables are case-sensitive, so <b id="variable">Example</b> and <b id="variable">EXAMple</b> are different variables.</h3>
 
                <h2 style="margin-top: 52px;">Paths</h2>
-               <h3>Paths are used define objects under different parents, which can be found in the <a id="href" target="_blank" href="https://create.roblox.com/docs/studio/explorer">Explorer tab</a>. Here is a quick example of how you would write the path to the Texture under Folder1.</h3>
+               <h3>Paths are used defining objects under different parent objects, which can be found in the <a id="href" target="_blank" href="https://create.roblox.com/docs/studio/explorer">Explorer tab</a>. Here is a quick example of how you would write the path to the Texture under Folder1.</h3>
                <img src="path-example.png" style="width: 86%; border-radius: 6px; box-shadow: 2px 2px 6px black; max-width: 230px; margin-top: 24px;">
 
                <div id="code-sample">
                 <h3 id="code-string"><b id="red">local</b> texture = <b id="blue">game</b>.<b id="dark-blue">Workspace</b>.<b id="dark-blue">ExampleFolder</b>.<b id="dark-blue">Folder1</b>.<b id="dark-blue">Texture</b></h3>
                 <h3 id="code-string"><b id="comment">-- Note that the folder 'ExampleFolder' is a folder object inside Workspace</b></h3>
-            </div>
+               </div>
 
-               <h3>We can see how we use the fullstop character to get children objects within another object. Here we can see that we started with the word 'game'. This keyword represents the whole game itself, and it is not visible in the explorer tab because everything inside the explorer is what's inside the keyword game. We can then see that we are navigating into 'Workspace', which you can find as the first object inside explorer. You can see how we used a dot (the fullstop) to connect these two keywords, which is basically grabbing the 'Workspace' object from game.</h3>
-               <h3>Using this logic, we can find other objects inside a previously defined object within one another, and we are able to navigate into the folder and find the texture object.</h3>
+               <h2 style="margin-top: 52px;">Updating Variables</h2>
+               <h3>To update a variable, you will use the equal sign like how you would for defining a variable. When re-defining the variable, you will not put <b id="variable">local</b> before the sentence (you technically can... but it's more advanced to understand so I won't explain too much in detail).</h3>
             </div>
 
             <div id="breaker"></div>
@@ -84,7 +100,21 @@
                 <a id="anchor2"></a>
                <h1>Modifying Properties</h1>
 
-               <h3>To be finished...</h3>
+               <h3>Like following paths to define an object into a variable, you can locate properties of defined objects using dots (fullstops). The variable will then have the value of the property, such as color or transparency of a part.</h3>
+               <img src="part-property.png" style="width: 86%; border-radius: 6px; box-shadow: 2px 2px 6px black; max-width: 290px; margin-top: 24px;">
+               <h3>An example of defining a variable with a property:</h3>
+
+               <div id="code-sample">
+                <h3 id="code-string"><b id="red">local</b> color = <b id="blue">game</b>.<b id="dark-blue">Workspace</b>.<b id="dark-blue">Part</b>.<b id="dark-blue">Color</b></h3>
+                <h3 id="code-string"><b id="comment">-- This will return a color3 value, as you can see in the image above that property defines the color of the part.</b></h3>
+               </div>
+
+               <h3>Changing the variable's value will just be updating the variable, the property that it defines will not update because it is not attached onto the variable. In order to update the property, you can use equal signs, like how you update a variable, to update the property.</h3>
+
+               <div id="code-sample">
+                <h3 id="code-string"><b id="blue">game</b>.<b id="dark-blue">Workspace</b>.<b id="dark-blue">Part</b>.<b id="dark-blue">Color</b> = <b id="blue">Color3</b>.<b id="blue">new</b>(<b id="gold">1</b>, <b id="gold">0</b>, <b id="gold">0</b>)</h3>
+                <h3 id="code-string"><b id="comment">-- This is how you can update a property of an object!</b></h3>
+               </div>
             </div>
 
             <div id="breaker"></div>
