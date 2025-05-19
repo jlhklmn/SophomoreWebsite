@@ -27,20 +27,20 @@
             <h2 style="padding-bottom: 0px; margin-bottom: 28px; margin-top: 32px;">LUAU Scripting Guide</h2>
             <a onclick="anchor(1)"><h2>Variables & Paths</h2></a>
             <a onclick="anchor(2)"><h2>Modifying Properties</h2></a>
-            <a onclick="anchor(3)"><h2 style="color: #6f6f6f;">Math Operators</h2></a>
-            <a onclick="anchor(4)"><h2 style="color: #6f6f6f;">Logical Statements</h2></a>
-            <a onclick="anchor(5)"><h2 style="color: #6f6f6f;">While & For Loops</h2></a>
-            <a onclick="anchor(6)"><h2 style="color: #6f6f6f;">Functions</h2></a>
-            <a onclick="anchor(7)"><h2 style="color: #6f6f6f;">Services</h2></a>
-            <a onclick="anchor(8)"><h2 style="color: #6f6f6f;">Tween Service</h2></a>
-            <a onclick="anchor(9)"><h2 style="color: #6f6f6f;">Events (Part 1)</h2></a>
-            <a onclick="anchor(10)"><h2 style="color: #6f6f6f;">Creating Instances</h2></a>
-            <a onclick="anchor(11)"><h2 style="color: #6f6f6f;">Characters & Humanoids</h2></a>
-            <a onclick="anchor(12)"><h2 style="color: #6f6f6f;">Player Animations</h2></a>
-            <a onclick="anchor(13)"><h2 style="color: #6f6f6f;">Particle Emitters</h2></a>
-            <a onclick="anchor(14)"><h2 style="color: #6f6f6f;">UI Interactions & Events (Part 2)</h2></a>
-            <a onclick="anchor(15)"><h2 style="color: #6f6f6f;">Protected Calls (pcall) (Advanced)</h2></a>
-            <a onclick="anchor(16)"><h2 style="color: #6f6f6f;">Module Scripts (Advanced)</h2></a>
+            <a onclick="anchor(3)"><h2>Math Operators</h2></a>
+            <a onclick="anchor(4)"><h2>Logical Statements</h2></a>
+            <a onclick="anchor(5)"><h2 style="display: none;">While & For Loops</h2></a>
+            <a onclick="anchor(6)"><h2 style="display: none;">Functions</h2></a>
+            <a onclick="anchor(7)"><h2 style="display: none;">Services</h2></a>
+            <a onclick="anchor(8)"><h2 style="display: none;">Tween Service</h2></a>
+            <a onclick="anchor(9)"><h2 style="display: none;">Events (Part 1)</h2></a>
+            <a onclick="anchor(10)"><h2 style="display: none;">Creating Instances</h2></a>
+            <a onclick="anchor(11)"><h2 style="display: none;">Characters & Humanoids</h2></a>
+            <a onclick="anchor(12)"><h2 style="display: none;">Player Animations</h2></a>
+            <a onclick="anchor(13)"><h2 style="display: none;">Particle Emitters</h2></a>
+            <a onclick="anchor(14)"><h2 style="display: none;">UI Interactions & Events (Part 2)</h2></a>
+            <a onclick="anchor(15)"><h2 style="display: none;">Protected Calls (pcall) (Advanced)</h2></a>
+            <a onclick="anchor(16)"><h2 style="display: none;">Module Scripts (Advanced)</h2></a>
             <a href="index.html"><h2 style="margin-top: 28px;">Back to Home Page</h2></a>
         </div>
 
@@ -136,6 +136,8 @@
                 <br>
                 <h3 id="code-string"><b id="comment">-- This is how you can update a property of an object!</b></h3>
                </div>
+
+               <h3 style="margin-top: 52px;">There are many types of data value you can use for properties, most commonly found types of value are <b id="variable">numbers</b>, <b id="variable">strings</b> (texts), <b id="variable">Color3</b>, <b id="variable">CFrame</b> (Position + Orientation), and countless more. Click on the corresponding links to visit for more information: <a id="href" target="_blank" href="https://create.roblox.com/docs/luau#types">LUA Types</a>, <a id="href" target="_blank" href="https://create.roblox.com/docs/en-us/reference/engine/datatypes">DataTypes</a>.</h3>
             </div>
 
             <div id="breaker"></div>
@@ -144,7 +146,31 @@
                 <a id="anchor3"></a>
                <h1>Math Operators</h1>
 
-               <h3>To be finished...</h3>
+               <h3>Numbers are one of the default LUA value types. Math operators allows us to modify the value of the number.</h3>
+              
+               <h3>
+                <b style="font-weight: 400;">+</b>  - Addition<br>
+                <b style="font-weight: 400;">-</b>  - Subtraction<br>
+                <b style="font-weight: 400;">*</b>  - Multiplication<br>
+                <b style="font-weight: 400;">/</b>  - Division<br>
+                <b style="font-weight: 400;">//</b> - Floor Division<br>
+                <b style="font-weight: 400;">^</b>  - Exponents<br>
+                <b style="font-weight: 400;">%</b>  - Modulus
+               </h3>
+
+               <h3>For more detailed information about these operators, see this <a id="href" target="_blank" href="https://create.roblox.com/docs/luau/operators#arithmetic">document page</a>.</h3>
+               <h3>Usually you use these operators after the equal sign in defining a variable. To quickly update the value without re-defining or making a new variable, you can add the equal sign right after the operator symbols.</h3>
+
+               <div id="code-sample">
+                <h3 id="code-string"><b id="red">local</b> value1 = <b id="gold">2</b></h3>
+                <br>
+                <h3 id="code-string"><b id="red">local</b> value2 = value1 + <b id="gold">2</b> <b id="comment">-- This creates a new variable with a new value</b></h3>
+                <h3 id="code-string">value1 += <b id="gold">2</b> <b id="comment">-- This directly adds a number onto current variable</b></h3>
+                <br>
+                <h3 id="code-string"><b id="blue">print</b>(value1)</h3>
+                <h3 id="code-string"><b id="blue">print</b>(value2)</h3>
+                <h3 id="code-string"><b id="comment">-- These two values will both print 4</b></h3>
+               </div>
             </div>
 
             <div id="breaker"></div>
@@ -153,7 +179,53 @@
                 <a id="anchor4"></a>
                <h1>Logical Statements</h1>
 
-               <h3>To be finished...</h3>
+               <h3>Logical statements allows you to determine what happens depending on whether the statement is true or false.<br>For example, if variable <b id="variable">x</b> == 1 (meaning x equals to one), it would return true or false depending on if the value of <b id="variable">x</b> is 1.</b></h3>
+               
+               <div id="code-sample">
+                <h3 id="code-string"><b id="red">local</b> x = <b id="gold">50</b></h3>
+                <br>
+                <h3 id="code-string"><b id="red">if</b> x == <b id="gold">50</b> <b id="red"> then</b></h3>
+                <h3 id="code-string"><b id="indent"></b><b id="blue">print</b>(<b id="green">"The value of x is 50."</b>)</h3>
+                <h3 id="code-string"><b id="red">elseif</b> x == <b id="gold">25</b> <b id="red"> then</b></h3>
+                <h3 id="code-string"><b id="indent"></b><b id="blue">print</b>(<b id="green">"This value of x is 25."</b>)</h3>
+                <h3 id="code-string"><b id="red">else</b></h3>
+                <h3 id="code-string"><b id="indent"></b><b id="blue">print</b>(<b id="green">"This value of x is not 50 nor 25."</b>)</h3>
+                <h3 id="code-string"><b id="red">end</b></h3>
+               </div>
+
+               <h3>In this example, you can see three main keywords we use; <b id="variable">if</b>, <b id="variable">elseif</b> and <b id="variable">else</b>. Think the keyword <b id="variable">if</b> as a sentence starter, all logical statements begins with this. you may use <a href="https://create.roblox.com/docs/luau/operators#relational" id="href" target="_blank">relational operators</a> to determine a statement's value; either true or false.</h3>
+               <h3>If the value returns as true, the rest of the code contained within the if statement runs. If it doesn't, that's where <b id="variable">else</b> and <b id="variable">elseif</b> comes to place. If the value is false, it will go to the next <b id="variable">elseif</b> statment and check it's value, if it's true it runs that batch of code instead. You can have as many <b id="variable">elseif</b> statements as you want, and if everything returns as false, the batch of code within <b id="variable">else</b> will be ran instead.</h3>
+               <h3><b id="variable">elseif</b> and <b id="variable">else</b> is not required to be used in every logical statements. </h3>
+
+               <h2 style="margin-top: 52px;">Relational Operators</h2>
+               <h3>As seen above, relational operators are used for determining true or false values. These types of values are called 'booleans' ('bool' values for short). The double equal symbol <b id="variable">==</b> is one of them, and it means whether if two values are exactly the same. You can learn more about them <a href="https://create.roblox.com/docs/luau/operators#relational" id="href" target="_blank">here</a>.</h3>
+               <h3>relational operators can also be used as a value for operators, not necessarily for logical statments. For example, </h3>
+               
+               <div id="code-sample">
+                <h3 id="code-string"><b id="red">local</b> x = <b id="gold">56</b> >= <b id="gold">24</b></h3>
+               </div>
+
+               <h3>Here you can see that variable <b id="variable">x</b> is equal to '56 is larger or equal to 24'. Usually this would return the value of <b id="variable">true</b> since 56 is larger than 24, the variable's value will be set to <b id="variable">true</b>, a boolean and not a number.</h3>
+
+               <h2 style="margin-top: 52px;">Logical Operators</h2>
+               <h3>Logical operators are used for shortening logical statments, for example, if you have two statements with the same result. You can learn more about them <a href="https://create.roblox.com/docs/luau/operators#logical" id="href" target="_blank">here</a>.</h3>
+
+               <div id="code-sample">
+                <h3 id="code-string"><b id="red">local</b>x = <b id="gold">50</b> > <b id="gold">24</b> <b id="red">and</b> <b id="gold">12</b> == <b id="gold">23</b></h3>
+                <h3 id="code-string"><b id="red">local</b>y = <b id="gold">50</b> > <b id="gold">24</b> <b id="red">or</b> <b id="gold">12</b> == <b id="gold">23</b></h3>
+                <h3 id="code-string"><b id="red">local</b>z = <b id="red">not</b> <b id="gold">50</b> > <b id="gold">24</b></h3>
+               </div>
+
+               <h3>
+                Here we can see some examples. Let's break it down a bit:
+                <br>
+                <br>
+                Variable <b id="variable">x</b> is <b id="variable">false</b>. Reason for that is because although statement 1 is true, statement 2 is false and the keyword <b id="variable">and</b> will only return true if all statments are true, otherwise returns false.
+                <br>
+                Variable <b id="variable">y</b> is <b id="variable">true</b>. For it to return as true, only one of the statements has to be true. Only if all all statements returns as false then it would return as false as well.
+                <br>
+                Variable <b id="variable">z</b> will return <b id="variable">false</b>. Although the statement is is true, the keyword <b id="variable">not</b> flips all values' around; meaning true returns as false, and false returns as true. 
+               </h3>
             </div>
 
             <div id="breaker"></div>
