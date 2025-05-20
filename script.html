@@ -29,18 +29,31 @@
             <a onclick="anchor(2)"><h2>Modifying Properties</h2></a>
             <a onclick="anchor(3)"><h2>Math Operators</h2></a>
             <a onclick="anchor(4)"><h2>Logical Statements</h2></a>
-            <a onclick="anchor(5)"><h2 style="display: none;">While & For Loops</h2></a>
-            <a onclick="anchor(6)"><h2 style="display: none;">Functions</h2></a>
-            <a onclick="anchor(7)"><h2 style="display: none;">Services</h2></a>
-            <a onclick="anchor(8)"><h2 style="display: none;">Tween Service</h2></a>
-            <a onclick="anchor(9)"><h2 style="display: none;">Events (Part 1)</h2></a>
-            <a onclick="anchor(10)"><h2 style="display: none;">Creating Instances</h2></a>
-            <a onclick="anchor(11)"><h2 style="display: none;">Characters & Humanoids</h2></a>
-            <a onclick="anchor(12)"><h2 style="display: none;">Player Animations</h2></a>
-            <a onclick="anchor(13)"><h2 style="display: none;">Particle Emitters</h2></a>
-            <a onclick="anchor(14)"><h2 style="display: none;">UI Interactions & Events (Part 2)</h2></a>
-            <a onclick="anchor(15)"><h2 style="display: none;">Protected Calls (pcall) (Advanced)</h2></a>
-            <a onclick="anchor(16)"><h2 style="display: none;">Module Scripts (Advanced)</h2></a>
+            <a onclick="anchor(5)"><h2>While & For Loops</h2></a>
+            <a onclick="anchor(5)"><h2>Functions</h2></a>
+            <a onclick="anchor(5)"><h2>Services</h2></a>
+            <a onclick="anchor(5)"><h2>Tween Service</h2></a>
+            <a onclick="anchor(5)"><h2>Events (Part 1)</h2></a>
+            <a onclick="anchor(5)"><h2>Creating Instances</h2></a>
+            <a onclick="anchor(5)"><h2>Characters & Humanoids</h2></a>
+            <a onclick="anchor(5)"><h2>Player Animations</h2></a>
+            <a onclick="anchor(5)"><h2>Particle Emitters</h2></a>
+            <a onclick="anchor(5)"><h2>UI Interactions & Events (Part 2)</h2></a>
+            <a onclick="anchor(5)"><h2>Protected Calls (pcall) (Advanced)</h2></a>
+            <a onclick="anchor(5)"><h2>Module Scripts (Advanced)</h2></a>
+<!--
+            <a onclick="anchor(6)"><h2>Functions</h2></a>
+            <a onclick="anchor(7)"><h2>Services</h2></a>
+            <a onclick="anchor(8)"><h2>Tween Service</h2></a>
+            <a onclick="anchor(9)"><h2>Events (Part 1)</h2></a>
+            <a onclick="anchor(10)"><h2>Creating Instances</h2></a>
+            <a onclick="anchor(11)"><h2>Characters & Humanoids</h2></a>
+            <a onclick="anchor(12)"><h2>Player Animations</h2></a>
+            <a onclick="anchor(13)"><h2>Particle Emitters</h2></a>
+            <a onclick="anchor(14)"><h2>UI Interactions & Events (Part 2)</h2></a>
+            <a onclick="anchor(15)"><h2>Protected Calls (pcall) (Advanced)</h2></a>
+            <a onclick="anchor(16)"><h2>Module Scripts (Advanced)</h2></a>
+             -->
             <a href="index.html"><h2 style="margin-top: 28px;">Back to Home Page</h2></a>
         </div>
 
@@ -50,14 +63,16 @@
             <div>
                 <h1 style="margin-bottom: 24px;">Introduction</h1>
                 
-                <h3>Here are some quick tips and tricks when during scripting to increase your productivity and efficiency. They're quite useful!</h3>
+                <h3>Here are some quick and useful functions and tips when scripting to increase your efficiency!</h3>
                 
-                <h3><b style="font-weight: 400;">Commenting</b>:<br> If you add two dashes (<b id="variable">--</b>) before a line of code/text, whatever is behind those dashes turns into a comment. Comments will not run, even if they are functionable code. They are useful to debug your code with (by toggling your code on and off), as well as writing notes down to remember which line does what.</h3>
-                <h3 style="margin-top: 16px;"><b style="font-weight: 400;">CTRL + Forward Slash ( / )</b>:<br> Toggles comment on all selected lines; Useful to quickly disable and enable code to debug whenever you have to.</h3>
-                <h3 style="margin-top: 16px;"><b style="font-weight: 400;">CTRL + Square Brackets ( [ <b style="font-weight: 300; color: #747576;">or</b> ] )</b>:<br> Indents all selected lines towards the left or right; An indent is the gap in front of a line of code, which can also be inserted by pressing the <b id="variable">TAB</b> key while at the start of the line.</h3>
-            
+                <h3><b style="font-weight: 400;">Commenting (Hotkey)</b>:<br> If you add two dashes (<b id="variable">--</b>) before a line of code/text, whatever is behind those dashes turns into a comment. Comments will not run, even if they are functionable code. They are useful to debug your code with (by toggling your code on and off), as well as writing notes down to remember which line does what.</h3>
+                <h3 style="margin-top: 16px;"><b style="font-weight: 400;">CTRL + Forward Slash ( / ) (Hotkey)</b>:<br> Toggles comment on all selected lines; Useful to quickly disable and enable code to debug whenever you have to.</h3>
+                <h3 style="margin-top: 16px;"><b style="font-weight: 400;">CTRL + Square Brackets ( [ <b style="font-weight: 300; color: #747576;">or</b> ] ) (Hotkey)</b>:<br> Indents all selected lines towards the left or right; An indent is the gap in front of a line of code, which can also be inserted by pressing the <b id="variable">TAB</b> key while at the start of the line.</h3>
+                <h3 style="margin-top: 52px;"><b style="font-weight: 400;">task.wait(number)</b>:<br>Wait a specific amount of seconds.</h3>
+
                 <div id="code-sample">
                     <h3 id="code-string"><b id="comment">-- This is an example of how a comment would look like!</b></h3>
+                    <h3 id="code-string"><b id="blue">task</b>.<b id="blue">wait</b>(<b id="gold">3</b>) <b id="comment">-- Waits a specific amount of seconds</b></h3>
                 </div>
             </div>
 
@@ -205,7 +220,7 @@
                 <h3 id="code-string"><b id="red">local</b> x = <b id="gold">56</b> >= <b id="gold">24</b></h3>
                </div>
 
-               <h3>Here you can see that variable <b id="variable">x</b> is equal to '56 is larger or equal to 24'. Usually this would return the value of <b id="variable">true</b> since 56 is larger than 24, the variable's value will be set to <b id="variable">true</b>, a boolean and not a number.</h3>
+               <h3>Here you can see that variable <b id="variable">x</b> is equal to '56 is larger or equal to 24'. Usually this would return the value of <b id="variable">true</b> since 56 is larger than 24, meaning the variable's value will be set to <b id="variable">true</b>, which is a boolean and not a number.</h3>
 
                <h2 style="margin-top: 52px;">Logical Operators</h2>
                <h3>Logical operators are used for shortening logical statments, for example, if you have two statements with the same result. You can learn more about them <a href="https://create.roblox.com/docs/luau/operators#logical" id="href" target="_blank">here</a>.</h3>
@@ -234,7 +249,35 @@
                 <a id="anchor5"></a>
                <h1>While & For Loops</h1>
 
-               <h3>To be finished...</h3>
+               <h3>Loops allows us to repeat snippets of code without having to re-write or copy and paste them multiple times, and they're uniquely useful.<br>There are three types of loops which are used in different situations; <b id="variable">while</b>, <b id="variable">repeat... until</b> and <b id="variable">for</b> loops.</h3>
+               <div id="code-sample">
+                <h3 id="code-string"><b id="red">local</b> x = <b id="bool">true</b></h3>
+                <br>
+                <h3 id="code-string"><b id="comment">-- While Loop</b></h3>
+                <h3 id="code-string"><b id="red">while</b> x <b id="red">do</b></h3>
+                <h3 id="code-string"><b id="indent"></b><b id="blue">print</b>(<b id="green">"Loop is running"</b>)</h3>
+                <h3 id="code-string"><b id="indent"></b><b id="blue">task</b>.<b id="blue">wait</b>() <b id="comment">-- Wait function with empty arguments to provide a slight delay to prevent crashes</b></h3>
+                <h3 id="code-string"><b id="red">end</b></h3>
+                <br>
+                <h3 id="code-string"><b id="comment">-- Repeat... Until Loop</b></h3>
+                <h3 id="code-string"><b id="red">repeat</b></h3>
+                <h3 id="code-string"><b id="indent"></b><b id="blue">print</b>(<b id="green">"Loop is running"</b>)</h3>
+                <h3 id="code-string"><b id="indent"></b><b id="blue">task</b>.<b id="blue">wait</b>() <b id="comment">-- Wait function with empty arguments to provide a slight delay to prevent crashes</b></h3>
+                <h3 id="code-string"><b id="red">until</b> <b id="red">not</b> x</h3>
+                <br>
+                <h3 id="code-string"><b id="comment">-- For Loop</b></h3>
+                <h3 id="code-string"><b id="red">for</b> i = <b id="gold">1</b>, <b id="gold">13</b>, <b id="gold">2</b> <b id="red">do</b></h3>
+                <h3 id="code-string"><b id="indent"></b><b id="blue">print</b>(i)</h3>
+                <h3 id="code-string"><b id="red">end</b></h3>
+               </div>
+
+               <h3><b id="variable">While</b> loops will always run continuesly non-stop as long as the logic has been met. In the example above, the <b id="variable">while</b> loop should be running since it is checking for variable <b id="variable">x</b>, which is set with value <b id="variable">true</b>. You can also replace the value with a statement using <a id="href" onclick="anchor(4)">relational and logical operators</a>, as shown above.</h3>
+               <h3>The <b id="variable">repeat</b> loop is similar as the <b id="variable">while</b> loop, but what makes them different is that <b id="variable">while</b> loops runs only if the logic has been met, meaning if the value is false it will never start running, while <b id="variable">repeat</b> loops will always run the containing code at least once before checking for the logic.</h3>
+               <h3>As you can see in both <b id="variable">while</b> and <b id="variable">for</b> loops, there is an empty wait function. An empty wait function will still yield the code, but the value will automatically be set to 0 meaning it will run the next <a href="https://create.roblox.com/docs/reference/engine/classes/RunService#Heartbeat" target="_blank" id="href">heartbeat</a>. This tiny delay allows these two types of loops run anything it contains without crashing, and if the yield has been removed it will run repeatedly until it can't anymore, crashing the code.</h3>
+               <br>
+               <h3><b id="variable">For</b> loops are a little different. It requires you to declare a variable when making the loop, which the variable is called the 'loop counter' or the 'iterator'. It is a dummy number that keeps track of the current step of the loop.</h3>
+               <h3>As you can see in the example above, after the equal sign behind the declared variable, there are three numbers that are seperated by commas. The <b id="variable">first</b> number represents at what number does the iterator variable starts at, <b id="variable">second</b> represents at which number it should stop at, and the <b id="variable">third</b> represents how much does the iterator increase every loop. Note that any of these numbers can be negative or decimal numbers, and the third number is not always required.</h3>
+               <h3>For instance, we can determine that the <b id="variable">for</b> loop in our example above runs for 6 times until it stopped. It starts at 1, which the iterator increased by 2 every time the loop ends, until the 6th loop where the iterator reaches 13, which stops the loop.</h3>
             </div>
 
             <div id="breaker"></div>
@@ -246,90 +289,90 @@
                <h3>To be finished...</h3>
             </div>
 
-            <div id="breaker"></div>
+            <div style="display: none;" id="breaker"></div>
 
-            <div>
+            <div style="display: none;">
                 <a id="anchor7"></a>
                <h1>Services</h1>
 
                <h3>To be finished...</h3>
             </div>
 
-            <div id="breaker"></div>
+            <div style="display: none;" id="breaker"></div>
 
-            <div>
+            <div style="display: none;">
                 <a id="anchor8"></a>
                <h1>Tween Service</h1>
 
                <h3>To be finished...</h3>
             </div>
 
-            <div id="breaker"></div>
+            <div style="display: none;" id="breaker"></div>
 
-            <div>
+            <div style="display: none;">
                 <a id="anchor9"></a>
                <h1>Events (Part 1)</h1>
 
                <h3>To be finished...</h3>
             </div>
 
-            <div id="breaker"></div>
+            <div style="display: none;" id="breaker"></div>
 
-            <div>
+            <div style="display: none;">
                 <a id="anchor10"></a>
                <h1>Creating Instances</h1>
 
                <h3>To be finished...</h3>
             </div>
 
-            <div id="breaker"></div>
+            <div style="display: none;" id="breaker"></div>
 
-            <div>
+            <div style="display: none;">
                 <a id="anchor11"></a>
                <h1>Characters & Humanoids</h1>
 
                <h3>To be finished...</h3>
             </div>
 
-            <div id="breaker"></div>
+            <div style="display: none;" id="breaker"></div>
 
-            <div>
+            <div style="display: none;">
                 <a id="anchor12"></a>
                <h1>Player Animations</h1>
 
                <h3>To be finished...</h3>
             </div>
 
-            <div id="breaker"></div>
+            <div style="display: none;" id="breaker"></div>
 
-            <div>
+            <div style="display: none;">
                 <a id="anchor13"></a>
                <h1>Particle Emitters</h1>
 
                <h3>To be finished...</h3>
             </div>
 
-            <div id="breaker"></div>
+            <div style="display: none;" id="breaker"></div>
 
-            <div>
+            <div style="display: none;">
                 <a id="anchor14"></a>
                <h1>UI Interactions & Events (Part 2)</h1>
 
                <h3>To be finished...</h3>
             </div>
 
-            <div id="breaker"></div>
+            <div style="display: none;" id="breaker"></div>
 
-            <div>
+            <div style="display: none;">
                 <a id="anchor15"></a>
                <h1>Protected Calls (pcall) (Advanced)</h1>
 
                <h3>To be finished...</h3>
             </div>
 
-            <div id="breaker"></div>
+            <div style="display: none;" id="breaker"></div>
 
-            <div>
+            <div style="display: none;">
                 <a id="anchor16"></a>
                <h1>Module Scripts (Advanced)</h1>
 
